@@ -6,7 +6,7 @@
   right: auto;
   transform: translateX(-50%);
   z-index: 900;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -83,6 +83,7 @@
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .sticky-call-button {
+    display: flex;
     bottom: 20px;
     left: 50%;
     right: auto;
