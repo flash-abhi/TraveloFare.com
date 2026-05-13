@@ -28,10 +28,10 @@ require('dotenv').config({ path: path.join(__dirname, '.env') });
 // Configuration
 const config = {
   apiUrl: process.env.API_URL || 'http://localhost:5001',
-  adminEmail: process.env.ADMIN_EMAIL || 'info@wegofares.com',
+  adminEmail: process.env.ADMIN_EMAIL || 'info@travelofare.com',
   adminPassword: process.env.ADMIN_PASSWORD || 'resert',
   
-  siteUrl: process.env.SITE_URL || 'https://wegofares.com',
+  siteUrl: process.env.SITE_URL || 'https://travelofare.com',
   siteName: process.env.SITE_NAME || 'TraveloFare',
   
   // API credentials (set these in .env)

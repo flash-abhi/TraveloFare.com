@@ -5,11 +5,11 @@
 const isDevelopment = process.env.NODE_ENV === 'development';
 
 export const API_URL = isDevelopment 
-  ? 'http://localhost:5005' 
-  : 'https://wegofares.onrender.com';  // Production uses same-origin /api routes through Hostinger
+  ? 'http://localhost:5007' 
+  : 'https://travelofare-backend.onrender.com';  // Production uses same-origin /api routes through Hostinger
 
 export const SOCKET_URL = isDevelopment
-  ? 'http://localhost:5005'
-  : 'https://wegofares.onrender.com';  // Production websocket uses the same domain
+  ? 'http://localhost:5007'
+  : 'https://travelofare-backend.onrender.com';  // Production websocket uses the same domain
 
 export default API_URL;

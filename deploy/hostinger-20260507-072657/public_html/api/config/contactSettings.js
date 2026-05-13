@@ -5,7 +5,7 @@
 
 let contactSettings = {
   tfn: '+1-888-859-0441',
-  email: 'info@wegofares.com',
+  email: 'info@travelofare.com',
   address: '1309 Coffeen Ave STE 1200, Sheridan, WY 82801, USA',
   workingHours: 'Mon-Sun 24/7'
 };

@@ -8,8 +8,8 @@ services:
     volumes:
       - ./build:/usr/share/nginx/html:ro
     environment:
-      - VIRTUAL_HOST=wegofares.com
-      - LETSENCRYPT_HOST=wegofares.com
+      - VIRTUAL_HOST=travelofare.com
+      - LETSENCRYPT_HOST=travelofare.com
       - VIRTUAL_PORT=80
     networks:
       - proxy-tier

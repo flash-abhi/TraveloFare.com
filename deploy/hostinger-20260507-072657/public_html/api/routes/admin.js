@@ -45,7 +45,7 @@ let adminUsers = [
   {
     id: 1,
     name: "Admin",
-    email: "info@wegofares.com",
+    email: "info@travelofare.com",
     password: "$2a$10$BaiQ2Njj1a3jsNLN9YYruu0wPKMzEQdvh0vM1iLMMhnPHhqt1TAky", // Hash: 'admin123'
   },
 ];
@@ -63,10 +63,10 @@ const updateAdminPassword = (email, newPasswordHash) => {
 // SEO data storage (in production, use database)
 let seoSettings = {
   pageTitle: 'Best Flight Deals, Hotels & Cruises | TraveloFare',
-  metaDescription: 'Find the best flight deals, hotels, cruises, and vacation packages at unbeatable prices. Book your next adventure with wegofares.com - Your trusted travel partner.',
+  metaDescription: 'Find the best flight deals, hotels, cruises, and vacation packages at unbeatable prices. Book your next adventure with travelofare.com - Your trusted travel partner.',
   keywords: 'flight deals, cheap flights, hotels, cruises, vacation packages, travel deals, airline tickets',
-  ogImage: 'https://wegofares.com/og-image.jpg',
-  canonicalUrl: 'https://wegofares.com'
+  ogImage: 'https://travelofare.com/og-image.jpg',
+  canonicalUrl: 'https://travelofare.com'
 };
 
 // Website content storage
@@ -74,7 +74,7 @@ let websiteContent = {
   heroTitle: '',
   heroSubtitle: '',
   aboutText: '',
-  contactEmail: 'support@wegofares.com',
+  contactEmail: 'support@travelofare.com',
   contactPhone: '+1-844-480-0252',
   contactAddress: '1309 Coffeen Ave STE 1200, Sheridan, WY 82801, USA'
 };
@@ -129,7 +129,7 @@ let gdsSettings = {
 // Contact Settings storage
 let contactSettings = {
   tfn: '+1-888-859-0441',
-  email: 'support@wegofares.com',
+  email: 'support@travelofare.com',
   address: '1309 Coffeen Ave STE 1200, Sheridan, WY 82801, USA',
   workingHours: 'Mon-Sun 24/7'
 };
@@ -138,7 +138,7 @@ let contactSettings = {
 let gscSettings = {
   clientId: process.env.GOOGLE_CLIENT_ID || '',
   clientSecret: process.env.GOOGLE_CLIENT_SECRET || '',
-  siteUrl: process.env.GSC_SITE_URL || 'https://wegofares.com',
+  siteUrl: process.env.GSC_SITE_URL || 'https://travelofare.com',
   enabled: false,
   connected: false
 };
@@ -411,7 +411,7 @@ router.get('/seo/analytics', verifyAdminToken, async (req, res) => {
 // SEO Site Audit
 router.get('/seo/audit', verifyAdminToken, async (req, res) => {
   try {
-    const siteUrl = process.env.GSC_SITE_URL || 'https://wegofares.com';
+    const siteUrl = process.env.GSC_SITE_URL || 'https://travelofare.com';
     
     const auditResults = {
       score: 85,
@@ -784,7 +784,7 @@ router.post('/blog/ai/generate', verifyAdminToken, async (req, res) => {
     const aiPost = await blogAI.generateBlogPost();
     
     // Generate live URL for the blog post
-    const blogUrl = `https://wegofares.com/blog/${aiPost.slug}`;
+    const blogUrl = `https://travelofare.com/blog/${aiPost.slug}`;
     
     const newPost = {
       id: blogPosts.length + 1,
@@ -825,7 +825,7 @@ router.post('/blog/ai/generate-bulk', verifyAdminToken, async (req, res) => {
       const aiPost = await blogAI.generateBlogPost();
       
       // Generate live URL for the blog post
-      const blogUrl = `https://wegofares.com/blog/${aiPost.slug}`;
+      const blogUrl = `https://travelofare.com/blog/${aiPost.slug}`;
       
       const newPost = {
         id: blogPosts.length + 1,
